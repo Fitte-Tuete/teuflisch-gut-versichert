@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"; // <-- 1. FOOTER IMPORTIERT
+import Footer from "../components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Teuflisch Gut Versichert",
   description: "Ihr persönlicher und unabhängiger Versicherungsexperte.",
 };
@@ -26,18 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      {/* 2. STICKY FOOTER KLASSEN HINZUGEFÜGT */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        
-        {/* 3. STICKY FOOTER KLASSE HINZUGEFÜGT */}
-        <main className="flex-grow" style={{ padding: '2rem' }}>
-          {children}
-        </main>
-
-        <Footer /> {/* <-- 4. FOOTER HINZUGEFÜGT */}
+        {/* HIER WIRD DER ABSTAND FÜR ALLE SEITEN ANGEPASST */}
+        <div className="relative p-4 sm:p-6 lg:p-8">
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

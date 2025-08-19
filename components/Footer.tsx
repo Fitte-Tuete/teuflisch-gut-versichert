@@ -5,12 +5,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    // Der äußere Footer sorgt jetzt nur noch für den Abstand nach oben/unten
-    <footer className="py-16 px-4">
-      {/* Dieser innere Container bekommt jetzt das komplette Styling */}
-      <div className="container mx-auto bg-gray-800 text-gray-300 p-12 rounded-2xl shadow-lg">
+    // HIER WIRD DER ABSTAND HINZUGEFÜGT
+    <footer className="bg-gray-800 text-gray-300 py-16 px-4 mt-8">
+      <div className="container mx-auto">
         
-        {/* Haupt-Grid für die drei Spalten */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
           
           {/* Spalte 1: Kontakt & Adresse */}
@@ -76,7 +74,6 @@ export default function Footer() {
 
         </div>
 
-        {/* Copyright-Leiste am Ende */}
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-sm text-gray-500">
             &copy; {currentYear} Teuflisch Gut Versichert - Versicherungsbüro Andreas Teufel. Alle Rechte vorbehalten.
