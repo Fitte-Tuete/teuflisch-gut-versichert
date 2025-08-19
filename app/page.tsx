@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <>
       {/* =================================================================== */}
-      {/* HERO SECTION (Logo oben links)                                    */}
+      {/* HERO SECTION                                                      */}
       {/* =================================================================== */}
       <div
         className="relative flex items-center justify-center min-h-[calc(100vh-4rem)] bg-cover bg-center"
@@ -14,17 +14,6 @@ export default function HomePage() {
       >
         <div className="absolute inset-0 bg-black/60 z-10"></div>
         
-        {/* Logo als klickbarer Link in der oberen linken Ecke */}
-        <Link href="/" className="absolute top-8 left-8 z-20">
-          <Image 
-            src="/logo.png" 
-            alt="Logo Teuflisch Gut Versichert" 
-            width={128} // Etwas kleiner für die Ecke
-            height={128}
-            className="rounded-full shadow-lg border-2 border-white/50" // Optional: Kleiner Rahmen
-          />
-        </Link>
-
         {/* Zentrierter Text-Container */}
         <div className="relative z-20 text-center text-white px-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
@@ -45,17 +34,16 @@ export default function HomePage() {
       </div>
 
       {/* =================================================================== */}
-      {/* INTRODUCTION & SERVICES SECTION (bleibt unverändert)              */}
+      {/* INTRODUCTION & SERVICES SECTION (FINALE VERSION)                  */}
       {/* =================================================================== */}
-      
-      <section className="bg-white py-20 px-4">
+      <section className="bg-gray-900 text-gray-200 py-20 px-4">
         <div className="container mx-auto">
           
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
               Willkommen beim Versicherungsbüro Andreas Teufel in Stuttgart
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-200">
               Wenn es um Ihre finanzielle Sicherheit und Ihre Gesundheit geht, sollten Sie keine Kompromisse eingehen. Als erfahrenes Versicherungsbüro in Stuttgart stehen wir Ihnen persönlich und kompetent zur Seite.
             </p>
           </div>
@@ -64,7 +52,7 @@ export default function HomePage() {
 
             <Link href="/betriebliche-altersvorsorge" className="block p-8 bg-gray-50 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto">
-                <svg xmlns="http://www.w.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-red-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-red-600">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h6M9 12h6m-6 5.25h6M5.25 3h13.5v18h-13.5z" />
                 </svg>
               </div>
@@ -110,13 +98,13 @@ export default function HomePage() {
               </p>
             </Link>
 
-          </div> {/* <-- Diese schließenden Tags haben wahrscheinlich gefehlt */}
+          </div>
           
           <div className="text-center max-w-3xl mx-auto mt-20">
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-200">
               Egal, ob Sie Unternehmer, Selbstständiger oder Privatkunde sind – wir nehmen uns Zeit für Ihr Anliegen und entwickeln ein Konzept, das wirklich funktioniert. Versicherung kann kompliziert sein – mit uns wird sie einfach.
             </p>
-            <a href="/kontakt" className="mt-8 inline-block bg-gray-800 hover:bg-black text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+            <a href="/kontakt" className="mt-8 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
               Vereinbaren Sie jetzt einen Termin
             </a>
           </div>
