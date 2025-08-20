@@ -24,7 +24,7 @@ export default function HomePage() {
           </p>
           <div className="mt-8">
             <a
-              href="/kontakt"
+              href="mailto:andreas.teufel@wuerttembergische.de"
               className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform hover:scale-105"
             >
               Jetzt Beratung anfordern
@@ -104,7 +104,7 @@ export default function HomePage() {
             <p className="text-lg text-gray-200">
               Egal, ob Sie Unternehmer, Selbstständiger oder Privatkunde sind – wir nehmen uns Zeit für Ihr Anliegen und entwickeln ein Konzept, das wirklich funktioniert. Versicherung kann kompliziert sein – mit uns wird sie einfach.
             </p>
-            <a href="/kontakt" className="mt-8 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+            <a href="tel:+497116142710" className="mt-8 inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
               Vereinbaren Sie jetzt einen Termin
             </a>
           </div>
